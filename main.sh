@@ -41,9 +41,10 @@ function wjshhelp() {
 };
 function wjshelp() { wjshhelp; };
 
-if [[ "$@" == *"--cargo"* || "$@" == *"--all"* ]]; then source ./cargo_shorthand.sh $@; fi
-if [[ "$@" == *"--git"*   || "$@" == *"--all"* ]]; then source ./git_shorthand.sh $@;   fi
-if [[ "$@" == *"--pnpm"*  || "$@" == *"--all"* ]]; then source ./pnpm_shorthand.sh $@;  fi
+
+if [[ "$@" == *"--cargo"* || "$@" == *"--all"* ]]; then source ~/.wj.sh/cargo_shorthand.sh $@; fi
+if [[ "$@" == *"--git"*   || "$@" == *"--all"* ]]; then source ~/.wj.sh/git_shorthand.sh $@;   fi
+if [[ "$@" == *"--pnpm"*  || "$@" == *"--all"* ]]; then source ~/.wj.sh/pnpm_shorthand.sh $@;  fi
 
 
 # if args empty run help
